@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+
+body{
+    background-image: url('../images/math.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Aldrich", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-optical-sizing: auto;
+}   
+
+
+/* The device with borders */
+.smartphone {
+   background-color: rgba(39, 39, 39, 0.917);
+    position: relative;
+    width: 22rem;
+    height: 38rem;
+    border: 16px rgb(0, 0, 0) solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+    box-shadow: 0 0 30px #062f66;
+  }
+  
+  /* The horizontal line on the top of the device */
+  .smartphone:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 10px;
+  }
+  
+  /* The circle on the bottom of the device */
+  .smartphone:after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    bottom: -65px;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 50%;
+  }
+
+.col.displayArea{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    width: 20rem;
+    background-color: rgba(0, 0, 0, 0.584);
+    color: snow;
+    height: 9rem;
+    font-size: 40px;
+    padding: 4%;
+}
+
+/*buttons*/
+.btn{
+    color: rgb(0, 0, 0);
+    width: 3.5rem;
+    border: 2%;
+    border-radius: 50px;
+    padding: 2%;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    font-weight: bolder;
+    box-shadow: 0 0 12px #c53f0e;
+}
+
+
+/*Placeholder for DisplayArea*/
+@keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-o-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-moz-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-webkit-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  .animate-flicker {
+     -webkit-animation: flickerAnimation .5s infinite;
+     -moz-animation: flickerAnimation .5s infinite;
+     -o-animation: flickerAnimation .5s infinite;
+      animation: flickerAnimation .5s infinite;
+  }
+  
+
+
+
