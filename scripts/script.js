@@ -151,7 +151,11 @@ function doMath(){
 // Equals key calls doMath() then updates display with result
 btnEqual.addEventListener("click", function(){
     doMath();
-    displayArea.innerText = result; 
+    displayArea.innerText = result;
+    stringNumber = "";
+    operatorSaved = "";
+    num1 = "0";
+    num2 = "0";
 });
 
 // Clear key calls resetCalc()
